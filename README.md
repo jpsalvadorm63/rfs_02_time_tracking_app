@@ -13,8 +13,6 @@ from the OS. And I get a more organized structure
 of component (in my sense as I hate two
 components in the same file).
 
+## Links
 
-Cheers
-
-
-Juan
+* [React.createClass vs React.Component](https://toddmotto.com/react-create-class-versus-component)

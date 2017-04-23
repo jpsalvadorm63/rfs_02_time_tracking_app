@@ -3,6 +3,12 @@ import helpers from "./helpers" ;
 
 class Timer extends Component {
 
+    /*
+    constructor(props) {
+        super(props);
+    };
+    */
+
     render() {
 
         const elapsedString = helpers.renderElapsedString(this.props.elapsed);

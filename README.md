@@ -17,5 +17,11 @@ of components: each one in one file, etc.
 
 * [React.createClass vs React.Component](https://toddmotto.com/react-create-class-versus-component)
 
-    **_Facebook does suggest the future
-    [removal of React.createClass](https://facebook.github.io/react/blog/2015/03/10/react-v0.13.html) completely in favour of ES6 classes_**
+**_Facebook does suggest the future
+[removal of React.createClass](https://facebook.github.io/react/blog/2015/03/10/react-v0.13.html) completely in favour of ES6 classes_**
+
+* [Keys](https://facebook.github.io/react/docs/lists-and-keys.html#keys)
+
+* [State and Lifecycle](https://facebook.github.io/react/docs/state-and-lifecycle.html)
+
+* [Forms in React](https://facebook.github.io/react/docs/forms.html)

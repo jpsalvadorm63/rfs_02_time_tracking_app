@@ -1,15 +1,14 @@
-/*window.helpers = (function () {*/
+import uuid from "uuid" ;
 
 const helpers = (function () {
 
     function newTimer(attrs = {}) {
         const timer = {
+            id: uuid.v4(), // eslint-disable-line no-undef
             title: attrs.title || 'Timer',
             project: attrs.project || 'Project',
-            id: uuid.v4(), // eslint-disable-line no-undef
             elapsed: 0,
         };
-
         return timer;
     }
 

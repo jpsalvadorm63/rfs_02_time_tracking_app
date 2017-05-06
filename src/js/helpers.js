@@ -12,6 +12,10 @@ const helpers = (function () {
         return timer;
     }
 
+    function validateTimer(timer) {
+        return (timer && timer.title && timer.project);
+    } ;
+
     function findById(array, id, cb) {
         array.forEach((el) => {
             if (el.id === id) {
@@ -51,6 +55,7 @@ const helpers = (function () {
     return {
         millisecondsToHuman: millisecondsToHuman,
         newTimer: newTimer,
+        validateTimer: validateTimer,
         findById: findById,
         renderElapsedString: renderElapsedString,
     };

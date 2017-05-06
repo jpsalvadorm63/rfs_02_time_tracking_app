@@ -4,9 +4,7 @@ import React, {Component} from "react" ;
 class TimerForm extends Component {
 
     constructor(props) {
-
         super(props) ;
-
         this.state = {
             id : props.id,
             title : props.title,
@@ -14,41 +12,24 @@ class TimerForm extends Component {
             elapsed : props.elapsed,
             runningSince : props.runningSince,
         } ;
-
-        this.handleChange = this.handleChange.bind(this) ;
-        this.handleSubmit = this.handleSubmit.bind(this) ;
-        this.handleCancel = this.handleCancel.bind(this) ;
     };
 
     handleChange = (event) => {
         const target = event.target;
         const value = target.type === 'checkbox' ? target.checked : target.value;
         const name = target.name;
-        this.setState({
-            [name]: value
-        });
-
+        this.setState({ [name]: value });
     } ;
 
-    handleSubmit = () => {
+    formSubmit = () => {
         if(this.props.onFormSubmit) {
             this.props.onFormSubmit({
                 id: this.props.id,
                 title: this.state.title,
                 project: this.state.project,
             });
-        } else {
-            console.log('Err: onFormSubmit not implemented') ;
         }
     } ;
-
-    handleCancel = () => {
-        console.log("- TimerForm.handleCancel -") ;
-        if(this.props.onFormClose)
-            this.props.onFormClose();
-        else
-            console.log('Err: onFormClose not implemented') ;
-    };
 
     render() {
 
@@ -74,12 +55,12 @@ class TimerForm extends Component {
                         <div className='ui two bottom attached buttons'>
                             <button
                                 className='ui basic blue button'
-                                onClick={this.handleSubmit}>
+                                onClick={this.formSubmit}>
                                 {submitText}
                             </button>
                             <button
                                 className='ui basic red button'
-                                onClick={this.handleCancel}>
+                                onClick={this.props.onFormCancel}>
                                 {cancelText}
                             </button>
                         </div>

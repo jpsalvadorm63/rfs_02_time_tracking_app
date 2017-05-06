@@ -9,7 +9,7 @@ This code comes from the book
 *Components*, 
 some modifications. For example, I created
 the project using the command `create-react-app`
-from the OS; to create components I avoid using `React.createClass`, instead I use
+from the OS command line; to create components I avoid using `React.createClass`, instead I use
 the `React.Component`; I got a better organized structure
 of components: each one in one file, etc.
 
@@ -25,3 +25,5 @@ of components: each one in one file, etc.
 * [State and Lifecycle](https://facebook.github.io/react/docs/state-and-lifecycle.html)
 
 * [Forms in React](https://facebook.github.io/react/docs/forms.html)
+
+* [communication between Components](https://www.ctheu.com/2015/02/12/how-to-communicate-between-react-components/#comp_to_comp)
